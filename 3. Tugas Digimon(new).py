@@ -27,9 +27,9 @@ for x in img:
         listcsv.append([id, name, link])
         id = id + 1
 
-        # x = mydb.cursor()
-        # x.execute('insert into digimon (name, link) values (%s, %s)', (name, link))
-        # mydb.commit()
+        x = mydb.cursor()
+        x.execute('insert into digimon (name, link) values (%s, %s)', (name, link))
+        mydb.commit()
 
 
 print(listcsv)
